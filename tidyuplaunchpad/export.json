@@ -1,8 +1,0 @@
-{
-    "workflow-export" :
-	    {"directory" : "~/git/alfred-extension/tidyuplaunchpad",
-		 "enable": true},
-    "source-export":
-		{"directory" : "~/git/alfred-extension/tidyuplaunchpad",
-		 "enable": true}
-}

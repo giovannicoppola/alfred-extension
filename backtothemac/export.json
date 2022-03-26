@@ -1,8 +1,0 @@
-{
-    "workflow-export" :
-	    {"directory" : "~/git/alfred-extension/backtothemac",
-		 "enable": true},
-    "source-export":
-		{"directory" : "~/git/alfred-extension/backtothemac",
-		 "enable": true}
-}

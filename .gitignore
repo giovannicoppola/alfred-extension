@@ -1,4 +1,3 @@
-*.pyc
 .DS_Store
-/agenda/export.py
-/export.py
+*.pyc
+__pycache__
