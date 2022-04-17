@@ -5,7 +5,7 @@ An [Alfred](https://www.alfredapp.com/) workflow to quickly access and manage ot
 Derived from `alfred-extension`, an [Alfred2 extension](https://github.com/jmjeong/alfred-extension/tree/master/managealfredextension) created by 
 Jaemok Jeong ([jmjeong](https://github.com/jmjeong)). 
 
-Main changes: Dropped `open in iTerm2`, `export`, and `disable` actions, added access to workflow info, folder, and cache, config, detection of hotkey conflicts. Workflows' info now stored in a `sqlite` database for faster access.
+Main changes: dropped `open in iTerm2`, `export`, and `disable` actions, added access to workflow info, folder, and cache, config, detection of hotkey conflicts. Workflows' info now stored in a `sqlite` database for faster access.
 
 ![](images/alfred-weworkflow.gif)
 
@@ -75,7 +75,7 @@ src="https://img.shields.io/github/downloads/giovannicoppola/alfred-weworkflow/t
 <a name="acknowledgments"></a>
 # Acknowledgments 😀
 - Jaemok Jeong ([jmjeong](https://github.com/jmjeong)) for developing [alfred extension](https://github.com/jmjeong/alfred-extension/tree/master/managealfredextension).
-- The [Alfred forum](https://www.alfredforum.com) community,
+- The [Alfred forum](https://www.alfredforum.com) community.
 
 <a name="changelog"></a>
 # Changelog 🧰
