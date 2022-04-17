@@ -1,77 +1,88 @@
-alfred-extension
+WeWorkflow
 ================
 
-Alfred2 extension made by Jaemok(jmjeong)
+An [Alfred](https://www.alfredapp.com/) workflow to quickly access and manage other workflows' info and folders. 
+Derived from `alfred-extension`, an [Alfred2 extension](https://github.com/jmjeong/alfred-extension/tree/master/managealfredextension) created by 
+Jaemok Jeong ([jmjeong](https://github.com/jmjeong)). 
 
-## Manage Alfred Extension ([Link](https://github.com/jmjeong/alfred-extension/tree/master/managealfredextension), [Download](https://raw.github.com/jmjeong/alfred-extension/master/managealfredextension/ManageAlfredExtension.alfredworkflow)) 
+Main changes: Dropped `open in iTerm2`, `export`, and `disable` actions, added access to workflow info, folder, and cache, config, detection of hotkey conflicts. Workflows' info now stored in a `sqlite` database for faster access.
 
-Search and manage the installed extension
+![](images/alfred-weworkflow.gif)
 
-![Screenshot](https://raw.github.com/jmjeong/alfred-extension/master/managealfredextension/screenshot.png)
+<a href="https://github.com/giovannicoppola/alfred-weworkflow/releases/latest/">
+<img alt="Downloads"
+src="https://img.shields.io/github/downloads/giovannicoppola/alfred-weworkflow/total?color=purple&label=Downloads"><br/>
+</a>
 
-## agenda ([Link](https://github.com/jmjeong/alfred-extension/tree/master/agenda), [Download](https://raw.github.com/jmjeong/alfred-extension/master/agenda/agenda.alfredworkflow))
+<!-- MarkdownTOC autolink="true" bracket="round" depth="3" autoanchor="true" -->
 
-Display events and reminder from the OS X
-
-![Screenshot](https://raw.github.com/jmjeong/alfred-extension/master/agenda/screenshot.jpg)
-
-## miseng ([Link](https://github.com/jmjeong/alfred-extension/tree/master/miseng), [Download](https://raw.github.com/jmjeong/alfred-extension/master/miseng/miseng.alfredworkflow))
-
-Comic Viewer - 미생웹툰 (Korean Webtoon)
-
-![Screenshot](https://raw.github.com/jmjeong/alfred-extension/master/miseng/screenshot.png)
-
-## Back To The Mac ([Link](https://github.com/jmjeong/alfred-extension/tree/master/backtothemac), [Download](https://raw.github.com/jmjeong/alfred-extension/master/backtothemac/BackToTheMac.alfredworkflow))
-
-Display the recent articles from [Back to The Mac](http://macnews.tistory.com)
-
-![Screenshot](https://raw.github.com/jmjeong/alfred-extension/master/backtothemac/screenshot.jpg)
-
-## Tidy up LaunchPad in Mountain Lion([Link](https://github.com/jmjeong/alfred-extension/tree/master/tidyuplaunchpad), [Download](https://raw.github.com/jmjeong/alfred-extension/master/tidyuplaunchpad/TidyupLaunchPad.alfredworkflow))
-
-Tidy up LaunchPad in Mountain Lion
-
-![Screenshot](https://raw.github.com/jmjeong/alfred-extension/master/tidyuplaunchpad/screenshot.png)
-
-## Cmd ([Link](https://github.com/jmjeong/alfred-extension/tree/master/cmd),[Download](https://raw.github.com/jmjeong/alfred-extension/master/cmd/cmd.alfredworkflow))
-
-Yet another command utility
-
-![Screenshot](https://raw.github.com/jmjeong/alfred-extension/master/cmd/screenshot.png)
+- [Setting up](#setting-up)
+- [Basic Usage](#usage)
+- [Known Issues](#known-issues)
+- [Acknowledgments](#acknowledgments)
+- [Changelog](#changelog)
+- [Feedback](#feedback)
 
 
-## date ([Link](https://github.com/jmjeong/alfred-extension/tree/master/date),[Download](https://raw.github.com/jmjeong/alfred-extension/master/date/date.alfredworkflow))
+<a name="setting-up"></a>
+# Setting up ⚙️
 
-오늘의 양력, 음력 날짜 출력과 양력, 음력 변환하는 workflow
+### Needed
 
-![Screenshot](https://raw.github.com/jmjeong/alfred-extension/master/date/screenshot.png)
+- Alfred with Powerpack license
+- Python3 (howto install [here](https://www.freecodecamp.org/news/python-version-on-mac-update/))
+
+### Setup
+  
+1. Download the most recent release of `alfred-WeWorkflow` from [Github](https://github.com/giovannicoppola/alfred-weworkflow/releases/latest) and double-click to install
+2. _Optional:_ Setup a hotkey to launch `alfred-WeWorkflow`
+4. _Optional:_ Change the keyword to launch `alfred-WeWorkflow` (currently set to `ww`)
 
 
-## things ([Link](https://github.com/jmjeong/alfred-extension/tree/master/things),[Download](https://raw.github.com/jmjeong/alfred-extension/master/things/things.alfredworkflow))
+<a name="usage"></a>
+# Basic Usage 📖
+`ww` or hotkey will launch `WeWorkflow`, type to search workflows (or use `advanced search` below. 
 
-Add to Things workflow. Supports date parsing for easy input.
+1. `return (⏎)` will open the workflow folder in Alfred's file browser
+2. `shift-return (⇧⏎)` will show the Workflow's **config** screen in Alfred
+3. `control-return (⌃⏎)` will show the Workflow's **info** in large font (including hotkey conflicts with active 🔴 and disabled 🟠 workflows)
+4. `command-return (⌘⏎)` will open the Workflow's **folder** in Finder
+5. `command-shift-return (⌘⇧⏎)` will open the Workflow's **folder** in Terminal
+6. `option-return (⌥⏎)` will open the Workflow's **cache folder** (if existing) in Finder
+7. `option-shift-return (⌥⇧⏎)` will open the Workflow's **cache folder** (if existing) in Terminal
+8. `fn-return (fn⏎)` will **launch** the workflow with the first keyword
 
-![Screenshot](https://raw.github.com/jmjeong/alfred-extension/master/things/screenshot.jpg)
 
-## alfred-pinboard ([Link](https://github.com/jmjeong/alfred-extension/tree/master/alfred-pinboard),[Download](https://raw.github.com/jmjeong/alfred-extension/master/alfred-pinboard/pinboard.alfredworkflow))
 
-[pinboard](https://pinboard.in) Search Tools
+## Advanced search 🔍
+- enter `field:`, where `field` is any of the fields below. Example: `name:wework`
+	- `name`
+	- `author`
+	- `keywords`
+	- `hotkeys`
+	- `disabled` (i.e. `disabled:true` and `disabled:false`)
+	- `description`
+	- `category`
+	- `readme`
 
-![Screenshot](https://raw.github.com/jmjeong/alfred-extension/master/alfred-pinboard/pbhelp.jpg)
 
-## bookmark ([Link](https://github.com/jmjeong/alfred-extension/tree/master/bookmark),[Download](https://raw.github.com/jmjeong/alfred-extension/master/bookmark/bookmark.alfredworkflow))
 
-Browser bookmark worflow which can be integrated with pinboard.in
 
-## ipaddr ([Link](https://github.com/jmjeong/alfred-extension/tree/master/ipaddr),[Download](https://raw.github.com/jmjeong/alfred-extension/master/ipaddr/ipaddr.alfredworkflow))
+<a name="known-issues"></a>
+# Known issues ⚠️
+- None for now, but let me know if you see anything!
 
-Display the external IP address
+<a name="acknowledgments"></a>
+# Acknowledgments 😀
+- Jaemok Jeong ([jmjeong](https://github.com/jmjeong)) for developing [alfred extension](https://github.com/jmjeong/alfred-extension/tree/master/managealfredextension).
+- The [Alfred forum](https://www.alfredforum.com) community,
 
-![Screenshot](https://raw.github.com/jmjeong/alfred-extension/master/ipaddr/screenshot.png)
+<a name="changelog"></a>
+# Changelog 🧰
 
-## Search Mac AppStore ([Link](https://github.com/jmjeong/alfred-extension/tree/master/searchmacappstore), [Download](https://raw.github.com/jmjeong/alfred-extension/master/searchmacappstore/SearchMacAppStore.alfredworkflow))
+- 04-17-2022: version 1.0
 
-Search Mac AppStore
+<a name="feedback"></a>
+# Feedback 🧐
 
-![Demo screenshot](https://raw.github.com/jmjeong/alfred-extension/master/searchmacappstore/screenshot.png)
-
+Feedback welcome! If you notice a bug, or have ideas for new features, please feel free to get in touch either here, or on the [Alfred](https://www.alfredforum.com) forum. 

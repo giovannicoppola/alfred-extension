@@ -3,81 +3,56 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.jmjeong.alfredv2.mae</string>
+	<string>giovanni-weworkflow</string>
 	<key>category</key>
-	<string>Tools</string>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>72C0E636-C427-4039-A22B-257320B6540F</key>
-		<array/>
-		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
+		<key>941C7010-C5D0-4F7B-9EE2-F407E119E895</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A8AB96C4-F827-4B8F-8043-EBB686D2D0D1</string>
+				<string>51E49C14-38A3-4D45-98A4-B71DB1D003A4</string>
+				<key>modifiers</key>
+				<integer>1179648</integer>
+				<key>modifiersubtext</key>
+				<string>open workflow folder in Terminal</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A1A754C5-32B9-46FB-AE3A-B771119F1E8A</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>Open workflow path in iTerm 2</string>
+				<string>reveal workflow folder in Finder</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>9A6BFF3E-5A60-48B7-904B-957CC812ACD8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>B3581A8D-8C84-4E0D-9DAA-21348D4DA88F</string>
+				<string>A5963A6B-E2C2-4988-8851-668E29DCB175</string>
 				<key>modifiers</key>
 				<integer>262144</integer>
 				<key>modifiersubtext</key>
-				<string>Reveal Folder in Finder</string>
+				<string>show workflow Info</string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>72C0E636-C427-4039-A22B-257320B6540F</string>
-				<key>modifiers</key>
-				<integer>131072</integer>
-				<key>modifiersubtext</key>
-				<string>Launch extension with the first keyword</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>B5338C09-9349-4854-8115-B77CE546946A</string>
-				<key>modifiers</key>
-				<integer>524288</integer>
-				<key>modifiersubtext</key>
-				<string>Export extension - Default: ~/Downloads, customize this value in export.json</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>F72A0346-1F5D-4D2A-BEC1-5FAB10D82C98</string>
+				<string>E3854BD0-40B4-4E62-9AA2-A4EEE852DA94</string>
 				<key>modifiers</key>
 				<integer>8388608</integer>
 				<key>modifiersubtext</key>
-				<string>Enable/Disable extension</string>
+				<string>launch workflow with fist keyword</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-		</array>
-		<key>B5338C09-9349-4854-8115-B77CE546946A</key>
-		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>33F588E7-C7A1-429E-9EC0-3B9434B9042C</string>
+				<string>2240CA4C-E605-4C31-88C1-70F81076342D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -85,12 +60,42 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A0357D6A-83E3-420F-AA87-0A29BD8C7CB0</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string>open workflow config</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>98CF41B7-8DA0-4B2E-A3CF-FA9B13666F2D</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>open cache folder in Finder</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>61643684-A2BA-449B-AFC4-3751DEE34867</string>
+				<key>modifiers</key>
+				<integer>655360</integer>
+				<key>modifiersubtext</key>
+				<string>open workflow cache folder in Terminal</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
-		<key>F72A0346-1F5D-4D2A-BEC1-5FAB10D82C98</key>
+		<key>FCC1CDE2-B70D-4560-8EE2-7410E9DCD989</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>54DACDC3-F262-4FF4-8CC9-0414E84CF7D8</string>
+				<string>941C7010-C5D0-4F7B-9EE2-F407E119E895</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -101,123 +106,15 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Jaemok Jeong</string>
+	<string>giovanni</string>
 	<key>description</key>
-	<string>Browse and manage the installed Alfred extensions</string>
+	<string>An Alfred workflow to access and manage other workflows' info</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Manage Alfred Extension</string>
+	<string>WeWorkflow</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>applescript</key>
-				<string>-- This is v0.6 of the custom script for AlfredApp for iTerm 2.9+
--- Please see https://github.com/stuartcryan/custom-iterm-applescripts-for-alfred/
--- for the latest changes.
-
--- Please note, if you store the iTerm binary in any other location than the Applications Folder
--- please ensure you update the two locations below (in the format of : rather than / for folder dividers)
--- this gets around issues with AppleScript not handling things well if you have two iTerm binaries on your system... which can happen :D
-
-on alfred_script(q)
-	set q to "cd " &amp; q &amp; ";clear;"
-    if application "iTerm2" is running or application "iTerm" is running then
-        run script "
-            on run {q}
-                tell application \":Applications:iTerm.app\"
-                    activate
-                    try
-                        select first window
-                        set onlywindow to false
-                    on error
-                        create window with default profile
-                        select first window
-                        set onlywindow to true
-                    end try
-                    tell the first window
-                        if onlywindow is false then
-                            create tab with default profile
-                        end if
-                        tell current session to write text q
-                    end tell
-                end tell
-            end run
-        " with parameters {q}
-    else
-        run script "
-            on run {q}
-                tell application \":Applications:iTerm.app\"
-                    activate
-                    try
-                        select first window
-                    on error
-                        create window with default profile
-                        select first window
-                    end try
-                    tell the first window
-                        tell current session to write text q
-                    end tell
-                end tell
-            end run
-        " with parameters {q}
-    end if
-end alfred_script</string>
-				<key>cachescript</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>A8AB96C4-F827-4B8F-8043-EBB686D2D0D1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>36</integer>
-				<key>keyword</key>
-				<string>alf</string>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>loading...</string>
-				<key>script</key>
-				<string>python main.py "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>List and view details about installed Alfred extensions</string>
-				<key>title</key>
-				<string>Manage Alfred Extension</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -225,128 +122,308 @@ end alfred_script</string>
 				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.browseinalfred</string>
+			<string>alfred.workflow.action.revealfile</string>
 			<key>uid</key>
-			<string>9A6BFF3E-5A60-48B7-904B-957CC812ACD8</string>
+			<string>A1A754C5-32B9-46FB-AE3A-B771119F1E8A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string># terminal script from http://www.ienno.de
+on run argv
+  set myPath to quoted form of (system attribute "myPath")
+
+
+ 
+  tell application "System Events"
+    if not (exists (processes where name is "Terminal")) then
+      do shell script "open -a Terminal " &amp; myPath
+    else
+      tell application "Terminal"
+        activate
+        if (count of windows) is 0 then
+          do script ("cd " &amp; myPath)
+        else
+          tell application "System Events" to tell process "Terminal.app" to keystroke "t" using command down
+          delay 1
+          do script ("cd " &amp; myPath) in first window
+        end if
+      end tell
+    end if
+  end tell
+
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>51E49C14-38A3-4D45-98A4-B71DB1D003A4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string>Monaco</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>{var:mySummary}</string>
+				<key>textcolor</key>
+				<string>#00F900FF</string>
+				<key>wrapat</key>
+				<integer>30</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>A5963A6B-E2C2-4988-8851-668E29DCB175</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+
+set myFirstKey to system attribute "myFirstKey"
+tell application id "com.runningwithcrayons.Alfred" to search myFirstKey
+
+
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E3854BD0-40B4-4E62-9AA2-A4EEE852DA94</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>12</integer>
+				<key>hotmod</key>
+				<integer>1835008</integer>
+				<key>hotstring</key>
+				<string>Q</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>FCC1CDE2-B70D-4560-8EE2-7410E9DCD989</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ww</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>found an updated workflow...⏳...rebuilding the database</string>
+				<key>script</key>
+				<string>export PATH=/opt/homebrew/bin:/usr/local/bin:$PATH
+python3 WeWorkflow.py "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Access your Alfred workflows</string>
+				<key>title</key>
+				<string>WeWorkflow</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>941C7010-C5D0-4F7B-9EE2-F407E119E895</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string></string>
+				<key>sortBy</key>
+				<integer>0</integer>
+				<key>sortDirection</key>
+				<integer>0</integer>
+				<key>sortFoldersAtTop</key>
+				<false/>
+				<key>sortOverride</key>
+				<false/>
+				<key>stackBrowserView</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.browseinalfred</string>
+			<key>uid</key>
+			<string>2240CA4C-E605-4C31-88C1-70F81076342D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+
+set myWorkflow to system attribute "myWorkflow"
+tell application id "com.runningwithcrayons.Alfred" to search "?workflow " &amp; myWorkflow
+#delay 3
+tell application "System Events" to key code 36
+
+
+
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A0357D6A-83E3-420F-AA87-0A29BD8C7CB0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string># terminal script from http://www.ienno.de
+on run argv
+  set myPath to quoted form of (system attribute "myCachePath")
+
+
+ 
+  tell application "System Events"
+    if not (exists (processes where name is "Terminal")) then
+      do shell script "open -a Terminal " &amp; myPath
+    else
+      tell application "Terminal"
+        activate
+        if (count of windows) is 0 then
+          do script ("cd " &amp; myPath)
+        else
+          tell application "System Events" to tell process "Terminal.app" to keystroke "t" using command down
+          delay 1
+          do script ("cd " &amp; myPath) in first window
+        end if
+      end tell
+    end if
+  end tell
+
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>61643684-A2BA-449B-AFC4-3751DEE34867</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string>{var:myCachePath}</string>
+			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.revealfile</string>
 			<key>uid</key>
-			<string>B3581A8D-8C84-4E0D-9DAA-21348D4DA88F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>36</integer>
-				<key>script</key>
-				<string>python launch.py "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>72C0E636-C427-4039-A22B-257320B6540F</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>36</integer>
-				<key>script</key>
-				<string>python export.py "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>B5338C09-9349-4854-8115-B77CE546946A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Export</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>33F588E7-C7A1-429E-9EC0-3B9434B9042C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>36</integer>
-				<key>script</key>
-				<string>python toggle.py "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>F72A0346-1F5D-4D2A-BEC1-5FAB10D82C98</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Toggle visibility</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>54DACDC3-F262-4FF4-8CC9-0414E84CF7D8</string>
+			<string>98CF41B7-8DA0-4B2E-A3CF-FA9B13666F2D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -367,73 +444,108 @@ alf &lt;search-term&gt; - search extension by title, author name, and keyword
 - fn    : Enable or Disable an extension</string>
 	<key>uidata</key>
 	<dict>
-		<key>33F588E7-C7A1-429E-9EC0-3B9434B9042C</key>
+		<key>2240CA4C-E605-4C31-88C1-70F81076342D</key>
 		<dict>
+			<key>note</key>
+			<string>browse folder in alfred</string>
 			<key>xpos</key>
-			<integer>700</integer>
+			<integer>680</integer>
 			<key>ypos</key>
-			<integer>450</integer>
+			<integer>465</integer>
 		</dict>
-		<key>54DACDC3-F262-4FF4-8CC9-0414E84CF7D8</key>
+		<key>51E49C14-38A3-4D45-98A4-B71DB1D003A4</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>open workflow folder in Terminal</string>
 			<key>xpos</key>
-			<integer>700</integer>
+			<integer>545</integer>
 			<key>ypos</key>
-			<integer>570</integer>
+			<integer>30</integer>
 		</dict>
-		<key>72C0E636-C427-4039-A22B-257320B6540F</key>
+		<key>61643684-A2BA-449B-AFC4-3751DEE34867</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>open workflow cache folder (if present) in Terminal</string>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>530</integer>
 			<key>ypos</key>
-			<real>340</real>
+			<integer>785</integer>
 		</dict>
-		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
+		<key>941C7010-C5D0-4F7B-9EE2-F407E119E895</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<integer>270</integer>
 			<key>ypos</key>
-			<integer>100</integer>
+			<integer>460</integer>
 		</dict>
-		<key>9A6BFF3E-5A60-48B7-904B-957CC812ACD8</key>
+		<key>98CF41B7-8DA0-4B2E-A3CF-FA9B13666F2D</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>reveal workflow cache folder (if present) in Finder</string>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>680</integer>
 			<key>ypos</key>
-			<real>120</real>
+			<integer>785</integer>
 		</dict>
-		<key>A8AB96C4-F827-4B8F-8043-EBB686D2D0D1</key>
+		<key>A0357D6A-83E3-420F-AA87-0A29BD8C7CB0</key>
 		<dict>
-			<key>xpos</key>
-			<integer>500</integer>
-			<key>ypos</key>
+			<key>colorindex</key>
 			<integer>10</integer>
+			<key>note</key>
+			<string>Open Workflow config</string>
+			<key>xpos</key>
+			<integer>680</integer>
+			<key>ypos</key>
+			<integer>635</integer>
 		</dict>
-		<key>B3581A8D-8C84-4E0D-9DAA-21348D4DA88F</key>
+		<key>A1A754C5-32B9-46FB-AE3A-B771119F1E8A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>reveal workflow folder in Finder</string>
+			<key>xpos</key>
+			<integer>695</integer>
+			<key>ypos</key>
+			<integer>30</integer>
+		</dict>
+		<key>A5963A6B-E2C2-4988-8851-668E29DCB175</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>690</integer>
 			<key>ypos</key>
-			<real>230</real>
+			<integer>210</integer>
 		</dict>
-		<key>B5338C09-9349-4854-8115-B77CE546946A</key>
+		<key>E3854BD0-40B4-4E62-9AA2-A4EEE852DA94</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Launch workflow with first keyword</string>
+			<key>xpos</key>
+			<integer>685</integer>
+			<key>ypos</key>
+			<integer>330</integer>
+		</dict>
+		<key>FCC1CDE2-B70D-4560-8EE2-7410E9DCD989</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>85</integer>
 			<key>ypos</key>
-			<integer>450</integer>
-		</dict>
-		<key>F72A0346-1F5D-4D2A-BEC1-5FAB10D82C98</key>
-		<dict>
-			<key>xpos</key>
-			<integer>500</integer>
-			<key>ypos</key>
-			<real>560</real>
+			<integer>460</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>2.12</string>
+	<string>1.0</string>
 	<key>webaddress</key>
-	<string>http://jmjeong.com</string>
+	<string></string>
 </dict>
 </plist>
