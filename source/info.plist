@@ -279,7 +279,7 @@ end run</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>ww</string>
+				<string>{var:mainkeyword}</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -429,19 +429,24 @@ end run</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Browse and manage the installed extension
+	<string>An Alfred workflow to quickly access and manage other workflows' info and folders. 
 
-alf - display the installed extensions
-alf &lt;search-term&gt; - search extension by title, author name, and keyword
+Derived from `alfred-extension`, an Alfred2 extension created by 
+Jaemok Jeong
 
-&lt;command&gt;
-- enter : Browse the installed folder in Alfred
-- ctrl  : Reveal the installed folder in Finder
-- shift : Execute extension with the first keyword
-- cmd   : Open iTerm 2 in the installed folder
-- shift : Export the extension for distribution 
-  Default: ~/Downloads, customize it with export.json file
-- fn    : Enable or Disable an extension</string>
+Main changes: Dropped `open in iTerm2`, `export`, and `disable` actions, added access to workflow info, folder, and cache, config, detection of hotkey conflicts. Workflows' info now stored in a `sqlite` database for faster access.
+
+# Basic Usage 📖
+`ww` or hotkey will launch `WeWorkflow`, type to search workflows (or use `advanced search` below. 
+
+1. `return (⏎)` will open the workflow folder in Alfred's file browser
+2. `shift-return (⇧⏎)` will show the Workflow's **config** screen in Alfred
+3. `control-return (⌃⏎)` will show the Workflow's **info** in large font (including hotkey conflicts with active 🔴 and disabled 🟠 workflows)
+4. `command-return (⌘⏎)` will open the Workflow's **folder** in Finder
+5. `command-shift-return (⌘⇧⏎)` will open the Workflow's **folder** in Terminal
+6. `option-return (⌥⏎)` will open the Workflow's **cache folder** (if existing) in Finder
+7. `option-shift-return (⌥⇧⏎)` will open the Workflow's **cache folder** (if existing) in Terminal
+8. `fn-return (fn⏎)` will **launch** the workflow with the first keyword</string>
 	<key>uidata</key>
 	<dict>
 		<key>2240CA4C-E605-4C31-88C1-70F81076342D</key>
@@ -449,9 +454,9 @@ alf &lt;search-term&gt; - search extension by title, author name, and keyword
 			<key>note</key>
 			<string>browse folder in alfred</string>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>465</integer>
+			<real>465</real>
 		</dict>
 		<key>51E49C14-38A3-4D45-98A4-B71DB1D003A4</key>
 		<dict>
@@ -460,9 +465,9 @@ alf &lt;search-term&gt; - search extension by title, author name, and keyword
 			<key>note</key>
 			<string>open workflow folder in Terminal</string>
 			<key>xpos</key>
-			<integer>545</integer>
+			<real>545</real>
 			<key>ypos</key>
-			<integer>30</integer>
+			<real>30</real>
 		</dict>
 		<key>61643684-A2BA-449B-AFC4-3751DEE34867</key>
 		<dict>
@@ -471,16 +476,16 @@ alf &lt;search-term&gt; - search extension by title, author name, and keyword
 			<key>note</key>
 			<string>open workflow cache folder (if present) in Terminal</string>
 			<key>xpos</key>
-			<integer>530</integer>
+			<real>530</real>
 			<key>ypos</key>
-			<integer>785</integer>
+			<real>785</real>
 		</dict>
 		<key>941C7010-C5D0-4F7B-9EE2-F407E119E895</key>
 		<dict>
 			<key>xpos</key>
-			<integer>270</integer>
+			<real>270</real>
 			<key>ypos</key>
-			<integer>460</integer>
+			<real>460</real>
 		</dict>
 		<key>98CF41B7-8DA0-4B2E-A3CF-FA9B13666F2D</key>
 		<dict>
@@ -489,9 +494,9 @@ alf &lt;search-term&gt; - search extension by title, author name, and keyword
 			<key>note</key>
 			<string>reveal workflow cache folder (if present) in Finder</string>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>785</integer>
+			<real>785</real>
 		</dict>
 		<key>A0357D6A-83E3-420F-AA87-0A29BD8C7CB0</key>
 		<dict>
@@ -500,9 +505,9 @@ alf &lt;search-term&gt; - search extension by title, author name, and keyword
 			<key>note</key>
 			<string>Open Workflow config</string>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>635</integer>
+			<real>635</real>
 		</dict>
 		<key>A1A754C5-32B9-46FB-AE3A-B771119F1E8A</key>
 		<dict>
@@ -511,16 +516,16 @@ alf &lt;search-term&gt; - search extension by title, author name, and keyword
 			<key>note</key>
 			<string>reveal workflow folder in Finder</string>
 			<key>xpos</key>
-			<integer>695</integer>
+			<real>695</real>
 			<key>ypos</key>
-			<integer>30</integer>
+			<real>30</real>
 		</dict>
 		<key>A5963A6B-E2C2-4988-8851-668E29DCB175</key>
 		<dict>
 			<key>xpos</key>
-			<integer>690</integer>
+			<real>690</real>
 			<key>ypos</key>
-			<integer>210</integer>
+			<real>210</real>
 		</dict>
 		<key>E3854BD0-40B4-4E62-9AA2-A4EEE852DA94</key>
 		<dict>
@@ -529,23 +534,47 @@ alf &lt;search-term&gt; - search extension by title, author name, and keyword
 			<key>note</key>
 			<string>Launch workflow with first keyword</string>
 			<key>xpos</key>
-			<integer>685</integer>
+			<real>685</real>
 			<key>ypos</key>
-			<integer>330</integer>
+			<real>330</real>
 		</dict>
 		<key>FCC1CDE2-B70D-4560-8EE2-7410E9DCD989</key>
 		<dict>
 			<key>xpos</key>
-			<integer>85</integer>
+			<real>85</real>
 			<key>ypos</key>
-			<integer>460</integer>
+			<real>460</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>ww</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Main Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>mainkeyword</string>
+		</dict>
+	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/giovannicoppola/alfred-weworkflow</string>
 </dict>
 </plist>
