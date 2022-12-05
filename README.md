@@ -24,8 +24,7 @@ src="https://img.shields.io/github/downloads/giovannicoppola/alfred-weworkflow/t
 - [Feedback](#feedback)
 
 
-<a name="setting-up"></a>
-# Setting up ⚙️
+<h1 id="setting-up">Setting up ⚙️</h1>
 
 ### Needed
 
@@ -39,8 +38,8 @@ src="https://img.shields.io/github/downloads/giovannicoppola/alfred-weworkflow/t
 4. _Optional:_ Change the keyword to launch `alfred-WeWorkflow` (currently set to `ww`)
 
 
-<a name="usage"></a>
-# Basic Usage 📖
+<h1 id="usage">Basic Usage 📖</h1>
+
 `ww` or hotkey will launch `WeWorkflow`, type to search workflows (or use `advanced search` below. 
 
 1. `return (⏎)` will open the workflow folder in Alfred's file browser
@@ -68,21 +67,20 @@ src="https://img.shields.io/github/downloads/giovannicoppola/alfred-weworkflow/t
 
 
 
-<a name="known-issues"></a>
-# Known issues ⚠️
+<h1 id="known-issues">Known issues ⚠️</h1>
+
 - None for now, but let me know if you see anything!
 
-<a name="acknowledgments"></a>
-# Acknowledgments 😀
+<h1 id="acknowledgments">Acknowledgments 😀</h1>
+
 - Jaemok Jeong ([jmjeong](https://github.com/jmjeong)) for developing [alfred extension](https://github.com/jmjeong/alfred-extension/tree/master/managealfredextension).
 - The [Alfred forum](https://www.alfredforum.com) community.
 
-<a name="changelog"></a>
-# Changelog 🧰
+<h1 id="changelog">Changelog 🧰</h1>
 
+- 12-04-2022: version 1.1 (Alfred 5)
 - 04-17-2022: version 1.0
 
-<a name="feedback"></a>
-# Feedback 🧐
+<h1 id="feedback">Feedback 🧐</h1>
 
 Feedback welcome! If you notice a bug, or have ideas for new features, please feel free to get in touch either here, or on the [Alfred](https://www.alfredforum.com) forum. 
