@@ -11,7 +11,7 @@ import sys
 import json
 import sqlite3
 from WeWorkflow_functions import *
-from config import INDEX_DB, CACHE_FOLDER, DIRNAME
+from config import INDEX_DB, CACHE_FOLDER, DIRNAME, DATA_FOLDER
 import time
 
 
@@ -96,6 +96,12 @@ if (resultsQ):
         else:
             cacheString = "Open cache folder "
 
+        myDataPath=DATA_FOLDER+bundleid
+        if not os.path.exists(myDataPath):
+            dataString = "no data folder to open "
+        else:
+            dataString = "Open data folder "
+
         resultJ["items"].append({
             "title": name+disabledString,
             "subtitle": str(countR)+"/"+myResLen + " "+description + "-"+createdby+keywordsString+hotkeyString,
@@ -104,7 +110,8 @@ if (resultsQ):
                  "myPath": path,
                  "myFirstKey": keywords.split(",")[0],
                  "myWorkflow": name,
-                 "myCachePath": myCachePath
+                 "myCachePath": myCachePath,
+                 "myDataPath": myDataPath
              },
             "valid": True,
             "arg": path,
@@ -118,6 +125,10 @@ if (resultsQ):
             "option+shift": {
                 "valid": 'true',
                 "subtitle": cacheString+"in Terminal"
+            },
+            "option+ctrl+shift": {
+                "valid": 'true',
+                "subtitle": dataString+"in Finder"
             }
             },
             "icon": {

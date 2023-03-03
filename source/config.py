@@ -6,6 +6,7 @@ import os
 WF_BUNDLE = os.getenv('alfred_workflow_bundleid')
 WF_FOLDER = os.path.expanduser('~')+"/Library/Caches/com.runningwithcrayons.Alfred/Workflow Data/"+WF_BUNDLE+"/"
 CACHE_FOLDER = os.path.expanduser('~')+"/Library/Caches/com.runningwithcrayons.Alfred/Workflow Data/"
+DATA_FOLDER = os.path.expanduser('~')+"/Library/Application Support/Alfred/Workflow Data/"
 
 
 INDEX_DB = WF_FOLDER+"index.db"

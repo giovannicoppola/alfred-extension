@@ -50,6 +50,7 @@ src="https://img.shields.io/github/downloads/giovannicoppola/alfred-weworkflow/t
 6. `option-return (⌥⏎)` will open the Workflow's **cache folder** (if existing) in Finder
 7. `option-shift-return (⌥⇧⏎)` will open the Workflow's **cache folder** (if existing) in Terminal
 8. `fn-return (fn⏎)` will **launch** the workflow with the first keyword
+9. `control-option-shift-return (^⌥⇧⏎)` will open the Workflow's **data folder** (if existing) in Finder
 
 
 
@@ -78,6 +79,7 @@ src="https://img.shields.io/github/downloads/giovannicoppola/alfred-weworkflow/t
 
 <h1 id="changelog">Changelog 🧰</h1>
 
+- 03-02-2023: version 1.2 (adding option to opem the data folder)
 - 12-04-2022: version 1.1 (Alfred 5)
 - 04-17-2022: version 1.0
 

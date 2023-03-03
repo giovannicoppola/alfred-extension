@@ -90,6 +90,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>25B247AD-0B7D-4B25-A4F5-3367B37F7142</string>
+				<key>modifiers</key>
+				<integer>917504</integer>
+				<key>modifiersubtext</key>
+				<string>open data folder in Finder</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>FCC1CDE2-B70D-4560-8EE2-7410E9DCD989</key>
 		<array>
@@ -427,6 +437,19 @@ end run</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string>{var:myDataPath}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>25B247AD-0B7D-4B25-A4F5-3367B37F7142</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>An Alfred workflow to quickly access and manage other workflows' info and folders. 
@@ -446,7 +469,8 @@ Main changes: Dropped `open in iTerm2`, `export`, and `disable` actions, added a
 5. `command-shift-return (⌘⇧⏎)` will open the Workflow's **folder** in Terminal
 6. `option-return (⌥⏎)` will open the Workflow's **cache folder** (if existing) in Finder
 7. `option-shift-return (⌥⇧⏎)` will open the Workflow's **cache folder** (if existing) in Terminal
-8. `fn-return (fn⏎)` will **launch** the workflow with the first keyword</string>
+8. `fn-return (fn⏎)` will **launch** the workflow with the first keyword
+9. `control-option-shift-return (^⇧⌥⏎)` will open the Workflow's **data folder** (if existing) in Finder</string>
 	<key>uidata</key>
 	<dict>
 		<key>2240CA4C-E605-4C31-88C1-70F81076342D</key>
@@ -457,6 +481,17 @@ Main changes: Dropped `open in iTerm2`, `export`, and `disable` actions, added a
 			<real>680</real>
 			<key>ypos</key>
 			<real>465</real>
+		</dict>
+		<key>25B247AD-0B7D-4B25-A4F5-3367B37F7142</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>reveal workflow data folder (if present) in Finder</string>
+			<key>xpos</key>
+			<real>685</real>
+			<key>ypos</key>
+			<real>945</real>
 		</dict>
 		<key>51E49C14-38A3-4D45-98A4-B71DB1D003A4</key>
 		<dict>
@@ -573,7 +608,7 @@ Main changes: Dropped `open in iTerm2`, `export`, and `disable` actions, added a
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/giovannicoppola/alfred-weworkflow</string>
 </dict>
