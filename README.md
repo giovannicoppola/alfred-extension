@@ -79,7 +79,8 @@ src="https://img.shields.io/github/downloads/giovannicoppola/alfred-weworkflow/t
 
 <h1 id="changelog">Changelog 🧰</h1>
 
-- 03-02-2023: version 1.2 (adding option to opem the data folder)
+- 07-06-2023: version 1.3 (faster open config)
+- 03-02-2023: version 1.2 (adding option to open the data folder)
 - 12-04-2022: version 1.1 (Alfred 5)
 - 04-17-2022: version 1.0
 

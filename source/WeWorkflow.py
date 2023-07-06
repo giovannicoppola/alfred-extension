@@ -87,7 +87,7 @@ if (resultsQ):
             hotkeyString + "\n\n"+ \
             conflictString 
 
-
+        
             #add: 1) last modified
 
         myCachePath=CACHE_FOLDER+bundleid
@@ -109,6 +109,7 @@ if (resultsQ):
                  "mySummary": mySummary,
                  "myPath": path,
                  "myFirstKey": keywords.split(",")[0],
+                 "myBundleID": bundleid,
                  "myWorkflow": name,
                  "myCachePath": myCachePath,
                  "myDataPath": myDataPath
